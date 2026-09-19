@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa - Reserva de Quadras Esportivas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .container {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 650px;
+            overflow: hidden;
+        }
+        /* Estilo do Cabeçote inspirado na imagem */
+        .cabecalho-banner {
+            background: linear-gradient(135deg, #1b4d3e 0%, #2e7d32 100%);
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+            position: relative;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+            border-bottom: 6px solid #ffb300;
+        }
+        .cabecalho-banner h1 {
+            font-size: 26px;
+            margin: 0 0 10px 0;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .cabecalho-banner p {
+            font-size: 15px;
+            margin: 0;
+            color: #e0f2f1;
+            font-weight: bold;
+        }
+        .conteudo-form {
+            padding: 30px 40px;
+        }
+        label {
+            display: block;
+            margin-bottom: 6px;
+            color: #34495e;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 8px;
+        }
+        .grupo-radio {
+            margin-bottom: 15px;
+        }
+        .grupo-radio label {
+            font-weight: normal;
+            display: inline;
+            color: #555;
+        }
+        textarea {
+            resize: vertical;
+        }
+        button[type="submit"] {
+            width: 100%;
+            background-color: #27ae60;
+            color: white;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+        button[type="submit"]:hover {
+            background-color: #219653;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Cabeçote / Banner personalizado -->
+     <div style="text-align: center; background-color: #0b1d28;">
+    <img src="Screenshot 2026-09-19 191242.png" alt="Banner Pesquisa Reserva de Quadras Esportivas" style="width: 100%; max-width: 650px; height: auto; display: block; margin: 0 auto; border-top-left-radius: 12px; border-top-right-radius: 12px;">
+</div>
+
+        <div class="conteudo-form">
+            <form action="#" method="POST">
+                
+                <label for="email">E-mail *</label>
+                <input type="email" id="email" name="email" placeholder="Digite o seu e-mail" required>
+
+                <label for="nome">Nome Completo *</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite o seu nome" required>
+
+                <label for="idade">Idade *</label>
+                <input type="number" id="idade" name="idade" placeholder="Digite a sua idade" required>
+
+                <label for="cidade">Cidade *</label>
+                <input type="text" id="cidade" name="cidade" placeholder="Digite a sua cidade" required>
+
+                <label for="esporte">Qual esporte pratica com mais frequência? *</label>
+                <input type="text" id="esporte" name="esporte" placeholder="Ex: Futebol, Vôlei..." required>
+
+                <label for="frequencia">Com que frequência reserva ou utiliza quadras esportivas? *</label>
+                <input type="text" id="frequencia" name="frequencia" placeholder="Ex: 4 vezes a cada 6 meses" required>
+
+                <label for="como_encontra">Como costuma encontrar ou reservar quadras esportivas hoje? *</label>
+                <input type="text" id="como_encontra" name="como_encontra" placeholder="Ex: Via WhatsApp, aplicativo..." required>
+
+                <label for="dificuldades">Quais dificuldades enfrenta ao procurar, comparar ou reservar quadras? *</label>
+                <textarea id="dificuldades" name="dificuldades" rows="3" placeholder="Ex: Demora de resposta, horários cheios..." required></textarea>
+
+                <label for="falta">O que sente falta em um sistema ou plataforma para reserva de quadras? *</label>
+                <textarea id="falta" name="falta" rows="3" placeholder="Ex: Visualizar horários disponíveis e qualidade da quadra..." required></textarea>
+
+                <label for="expectativa">O que esperaria de uma plataforma digital de intermediação? *</label>
+                <textarea id="expectativa" name="expectativa" rows="3" placeholder="Ex: Disponibilidade rápida, campeonatos, facilidade..." required></textarea>
+
+                <label>Usaria uma plataforma assim se ela facilitasse a busca e a reserva? *</label>
+                <div class="grupo-radio">
+                    <input type="radio" id="sim" name="usaria_plataforma" value="Sim" required>
+                    <label for="sim">Sim</label>
+                    <br>
+                    <input type="radio" id="nao" name="usaria_plataforma" value="Não">
+                    <label for="nao">Não</label>
+                </div>
+
+                <button type="submit">Enviar Resposta</button>
+
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
